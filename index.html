@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p6-gallery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<style>
+*{
+    margin: 0;
+    padding: 0;
+}
+img{
+    width: 100%;
+}
+ :root{
+    --beig: #BB9F53;
+    --negre: #000000;
+    --marro: #896235;
+    --taronja: #E46C29;
+    --blau: #7094BE;
+    --taronja_clar: #EAA47E;
+    --groc: #FFF278;
+    --titol_subtitol_descripcio: 'Montserrat', sans-serif;
+ }
+h1,h2,p{
+    font-family: var(--titol_subtitol_descripcio);
+} 
+ h1{
+    color: var(--negre);
+    font-size: 0.9em;
+    font-variant: small-caps;
+    padding: 1em 0 0 0;
+    
+ }
+ h2{
+    color: var(--blau);
+    font-size: 1.2em;
+    font-weight: 700;
+    padding: 1em 0 0 0;
+ }
+ p{
+    color: var(--marro);
+    font-size: 0.8em;
+    font-weight: 400;
+ }
+.gallery{
+    padding: 2em;
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+    background-color: #B9DCFC;
+}
+.card{
+    transition: flex-grow 1s;
+    border-radius: 0.3em;
+    flex-basis: 18%;
+    border: 0.3em solid var(--taronja);
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+}
+.card:nth-child(1){
+    flex-basis: 50%;
+    background-color: #F6DED0;
+    
+}
+.card:nth-child(2){
+    background-color: #F6DED0;
+    object-position: top;
+    flex-basis: 19%;
+   
+}
+.card:nth-child(3){
+    background-color: #F6DED0;
+    flex-basis: 19%;
+ 
+}
+.card:nth-child(4){
+    background-color: #F6DED0;
+    
+}
+.card:nth-child(5){
+    flex-grow: 1;
+    flex-basis: 25%;
+    background-color: #F6DED0;
+}
+.card:nth-child(6){
+    background-color: #F6DED0;
+    flex-basis: 40%;
+}
+.card_img{
+    width: 100%;
+    height: 270px;
+}
+.card_img img{
+    object-fit: cover;
+    height: 100%;
+    /*object-position: top;*/
+}
+.card:hover{
+    flex-grow: 1;
+    box-shadow: 0em 0em 0.5em var(--groc);
+}
+.card:nth-child(2) img{
+object-position: top;
+}
+.card:nth-child(4) img{
+object-position: top;
+}
+.card:nth-child(6) img{
+object-position: bottom;
+}
+</style>
+</head>
+<body>
+    <main>
+        <div class="gallery">
+            <div class="card">
+                <figure class="card_img">
+                    <img src="img/02.jpeg" alt="">
+                </figure>
+                <header class="card_txt">
+                    <h1>sol naciente</h1>
+                    <h2>CLAUDE MONET</h2>
+                    <p>Quizá no sea el cuadro más famoso del movimiento impresionista pero sí marcó un punto de inflexión en el mundo del arte puesto que a este cuadro se debe el nombre de Impresionismo –los críticos utilizaron el término tomado de la obra, como una burla–.
+                    </p>
+                </header>
+            </div>
+            <div class="card">
+                <figure class="card_img">
+                    <img src="img/01.jpeg" alt="">
+                </figure>
+                <header class="card_txt">
+                    <h1>la mona lisa</h1>
+                    <h2>LEONARDO DA VINCI</h2>
+                    <p>El retrato de Lisa Gherardini o aún siguen surgiendo teorías sobre la identidad y sobre la enigmática sonrisa de la retratada por el gran artista renacentista a comienzos del siglo XVI.
+                    </p>
+                </header>
+            </div>
+            <div class="card">
+                <figure class="card_img">
+                    <img src="img/03.jpeg" alt="">
+                </figure>
+                <header class="card_txt">
+                    <h1>las meninas</h1>
+                    <h2>DIEGO DE VELÁZQUEZ</h2>
+                    <p>Una de las obras más representativas del siglo de Oro de la pintura española –y de las más admiradas en el Museo del Prado–, fechada sobre 1656, cuyo título es La familia de Felipe IV.
+                    </p>
+                </header>
+            </div>
+            <div class="card">
+                <figure class="card_img">
+                    <img src="img/06.jpg" alt="">
+                </figure>
+                <header class="card_txt">
+                    <h1>la joven de la perla</h1>
+                    <h2>JOHANNES VERMEER</h2>
+                    <p>Uno de los retratos más bellos de la historia del arte, realizado por el pintor holandés sobre 1665. También se le conoce como Muchacha con turbante y puede verse en el museo Mauritshuis, en La Haya (Países Bajos).
+                    </p>
+                </header>
+            </div>
+            <div class="card">
+                <figure class="card_img">
+                    <img src="img/04.jpeg" alt="">
+                </figure>
+                <header class="card_txt">
+                    <h1>la capilla sixtina</h1>
+                    <h2>MIGUEL ÁNGEL</h2>
+                    <p>En 1508 el Papa Sixto IV encargó a Miguel Ángel que pintara la bóveda de esta capilla en el Vaticano. Hoy, esos frescos con diferentes episodios del Génesis, constituyen una de las obras más conocidas de la pintura.El detalle de las manos a punto de tocarse es un detalle simple pero tiene un profundo significado: Dios está ahí, pero la decisión de buscarlo depende del hombre.
+                    </p>
+                </header>
+            </div>
+            <div class="card">
+                <figure class="card_img">
+                    <img src="img/05.jpeg" alt="">
+                </figure>
+                <header class="card_txt">
+                    <h1>la noche estrellada</h1>
+                    <h2>VINCENT VAN GOGH</h2>
+                    <p>Es quizá, junto con sus autorretratos, la obra más representativa, conocida y personal del pintor postimpresionista, quien lo pintó mientras estaba ingresado en el hospital psiquiátrico. representa la vista desde la ventana orientada al este de su habitación de asilo en Saint-Rémy-de-Provence, justo antes del amanecer, con la adición de un pueblo imaginario. Van Gogh representó la vista en diferentes momentos del día , incluido el amanecer, la salida de la luna, los días llenos de sol, los días nublados, los días ventosos y un día con lluvia.
+                    </p>
+                </header>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
