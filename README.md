@@ -1,2 +1,2 @@
-# p5
+# p6
 Art gallery
